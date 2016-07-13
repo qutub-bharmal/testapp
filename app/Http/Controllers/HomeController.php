@@ -49,9 +49,10 @@ class HomeController extends Controller
             foreach ($result as $value) {
                 $count += $value->totalValue;
             }
+            $result = array_reverse($result);
         }
 
-        $result = array_reverse($result);
+
         return View::make('testForm', compact(['result', 'count'])) ;
     }
 
