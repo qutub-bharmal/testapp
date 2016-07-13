@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/test', array( 'uses' => 'HomeController@temp' ));
+
+Route::post('/test', array( 'uses' => 'HomeController@postForm' ));
+
+Route::get('/demo', function () {
+    return view('welcome');
+});
