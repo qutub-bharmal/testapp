@@ -29,3 +29,5 @@ If you see any error for the key, please generate key by below command:
 ```
 php artisan key:generate
 ```
+
+You can see solution at ```\test``` route
